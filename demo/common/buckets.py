@@ -17,7 +17,7 @@ class Buckets:
                 h=2,
             )
         ],
-        unit=StandardText.MillisecondUnit,
+        unit=StandardText.MILLISECOND_UNIT,
     )
 
 

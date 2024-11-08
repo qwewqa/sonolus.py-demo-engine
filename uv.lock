@@ -10,13 +10,13 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "sonolus-py", specifier = ">=0.1.1" }]
+requires-dist = [{ name = "sonolus-py", specifier = ">=0.1.2" }]
 
 [[package]]
 name = "sonolus-py"
-version = "0.1.1"
+version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/df/2f/957fd48d7fe14a4b2b5eb9f7f5ba69f7d943e727385b2fde8ffdaadf9022/sonolus_py-0.1.1.tar.gz", hash = "sha256:deb15f887969070a4ccf57cd6db42213a01de621708c9f263f80264f5122a5f7", size = 85388 }
+sdist = { url = "https://files.pythonhosted.org/packages/6d/0e/9020eb2d62d87c63049ba5e9645810ab19f4e1f3b71c0c8c73a0cdbc87fb/sonolus_py-0.1.2.tar.gz", hash = "sha256:0973ebabf6d713d08ebd22e8877f3d0461dbde5a5c3f1cb9d3b2c3a77bb07ecc", size = 86085 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/eb/065ae33691d3ac4b9f9b06fd919e304088fb4db35b7efa47578ffc8b3725/sonolus_py-0.1.1-py3-none-any.whl", hash = "sha256:1f23c6c9d414e4e49ead9b9b2aa2b8131d8dfdac05000b6934ee6c7cc5465e82", size = 88155 },
+    { url = "https://files.pythonhosted.org/packages/b7/91/47a6d41e434459130445bacd67b86e290aabaa06dd5e8c5a2764a37fc205/sonolus_py-0.1.2-py3-none-any.whl", hash = "sha256:8e563a2d97bbe24fcd026622050d62b56187d00f8a79f409c5d045e691a99f17", size = 88994 },
 ]

@@ -9,6 +9,7 @@ from sonolus.script.graphics import Rect
 from sonolus.script.interval import Interval
 from sonolus.script.runtime import is_replay, scaled_time, is_skip
 from sonolus.script.timing import beat_to_time, time_to_scaled_time, beat_to_bpm
+from sonolus.script.vec import Vec2
 
 from demo.common.buckets import Buckets
 from demo.common.effect import Effects
@@ -20,9 +21,9 @@ from demo.watch.config import Config
 class Note(WatchArchetype):
     is_scored = True
 
-    beat: StandardImport.Beat
-    judgment: StandardImport.Judgment
-    accuracy: StandardImport.Accuracy
+    beat: StandardImport.BEAT
+    judgment: StandardImport.JUDGMENT
+    accuracy: StandardImport.ACCURACY
     x: float = imported()
 
     initialized: bool = entity_memory()
@@ -68,7 +69,7 @@ class Note(WatchArchetype):
     def update_parallel(self):
         y = self.visual_time.unlerp(scaled_time())
         layout = Rect.from_center(
-            x=self.x, y=y, w=Config.note_radius, h=-Config.note_radius
+            Vec2(self.x, y), Vec2(2 * Config.note_radius, -2 * Config.note_radius)
         )
         Skin.note.draw(layout, z=self.z)
 
@@ -79,7 +80,7 @@ class Note(WatchArchetype):
             return
 
         particle_layout = Rect.from_center(
-            x=self.x, y=1, w=2 * Config.note_radius, h=-2 * Config.note_radius
+            Vec2(self.x, 1), Vec2(4 * Config.note_radius, -4 * Config.note_radius)
         )
 
         Particles.note.spawn(particle_layout, duration=0.3)

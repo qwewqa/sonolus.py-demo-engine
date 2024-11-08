@@ -10,6 +10,7 @@ from sonolus.script.graphics import Rect
 from sonolus.script.interval import Interval
 from sonolus.script.runtime import time, touches, scaled_time, input_offset
 from sonolus.script.timing import beat_to_time, time_to_scaled_time, beat_to_bpm
+from sonolus.script.vec import Vec2
 
 from demo.common.buckets import note_window, Buckets
 from demo.play.config import Config
@@ -22,7 +23,7 @@ from demo.common.skin import Skin
 class Note(PlayArchetype):
     is_scored = True
 
-    beat: StandardImport.Beat
+    beat: StandardImport.BEAT
     x: float = imported()
 
     target_time: float = entity_memory()
@@ -74,7 +75,7 @@ class Note(PlayArchetype):
                     Effects.good.play(0.02)
 
             particle_layout = Rect.from_center(
-                x=self.x, y=1, w=2 * Config.note_radius, h=-2 * Config.note_radius
+                Vec2(self.x, 1), Vec2(4 * Config.note_radius, -4 * Config.note_radius)
             )
 
             Particles.note.spawn(particle_layout, duration=0.3)
@@ -90,6 +91,6 @@ class Note(PlayArchetype):
 
         y = self.visual_time.unlerp(scaled_time())
         layout = Rect.from_center(
-            x=self.x, y=y, w=Config.note_radius, h=-Config.note_radius
+            Vec2(self.x, y), Vec2(2 * Config.note_radius, -2 * Config.note_radius)
         )
         Skin.note.draw(layout, z=self.z)
