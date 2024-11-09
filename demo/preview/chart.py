@@ -4,7 +4,7 @@ from sonolus.script.globals import level_data
 from sonolus.script.graphics import Rect
 from sonolus.script.interval import Interval
 from sonolus.script.math import ceil
-from sonolus.script.preview import PrintFormat, PrintColor, print_number
+from sonolus.script.print import PrintFormat, PrintColor, print_number
 from sonolus.script.runtime import skin_transform, screen, HorizontalAlign
 from sonolus.script.sprite import Sprite
 from sonolus.script.timing import beat_to_time

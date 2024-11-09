@@ -1,7 +1,7 @@
 from sonolus.script.archetype import PreviewArchetype, callback
 from sonolus.script.graphics import Rect
 from sonolus.script.math import floor
-from sonolus.script.preview import PrintFormat, PrintColor
+from sonolus.script.print import PrintFormat, PrintColor
 from sonolus.script.runtime import canvas, ScrollDirection, screen
 from sonolus.script.timing import beat_to_time
 from sonolus.script.vec import Vec2

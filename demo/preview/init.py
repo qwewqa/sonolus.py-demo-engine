@@ -3,7 +3,6 @@ from sonolus.script.runtime import (
     screen,
     preview_ui as ui,
     preview_ui_configs as ui_configs,
-    HorizontalAlign,
     set_skin_transform,
 )
 from sonolus.script.transform import Transform2d
@@ -32,7 +31,6 @@ def init_ui():
         dimensions=Vec2(0.15, 0.15) * ui_configs.menu.scale,
         rotation=0,
         alpha=ui_configs.menu.alpha,
-        horizontal_align=HorizontalAlign.CENTER,
         background=True,
     )
     ui.progress.update(
@@ -41,6 +39,5 @@ def init_ui():
         dimensions=Vec2(screen().w - 0.1, y=0.15 * ui_configs.progress.scale),
         rotation=0,
         alpha=ui_configs.progress.alpha,
-        horizontal_align=HorizontalAlign.CENTER,
         background=True,
     )
