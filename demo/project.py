@@ -6,6 +6,7 @@ from demo.common.ui import ui_config
 from demo.level import demo_level
 from demo.play.mode import play_mode
 from demo.preview.mode import preview_mode
+from demo.tutorial.mode import tutorial_mode
 from demo.watch.mode import watch_mode
 
 engine = Engine(
@@ -20,6 +21,7 @@ engine = Engine(
         play=play_mode,
         watch=watch_mode,
         preview=preview_mode,
+        tutorial=tutorial_mode,
     ),
 )
 
