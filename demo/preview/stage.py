@@ -69,7 +69,7 @@ class Stage(PreviewArchetype):
 
     @staticmethod
     def print_measures():
-        for i in range(0, floor(Chart.duration) + 1, 4):
+        for i in range(0, floor(Chart.beats) + 1, 4):
             print_at_time(
                 i / 4 + 1,
                 beat_to_time(i),
