@@ -1,4 +1,4 @@
-from sonolus.script.particle import particles, StandardParticle
+from sonolus.script.particle import StandardParticle, particles
 
 
 @particles

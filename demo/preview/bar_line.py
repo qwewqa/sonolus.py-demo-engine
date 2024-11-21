@@ -1,9 +1,9 @@
 from sonolus.script.archetype import (
     PreviewArchetype,
-    StandardImport,
     StandardArchetypeName,
+    StandardImport,
 )
-from sonolus.script.print import PrintFormat, PrintColor
+from sonolus.script.print import PrintColor, PrintFormat
 from sonolus.script.timing import beat_to_time
 
 from demo.common.skin import Skin

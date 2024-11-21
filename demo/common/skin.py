@@ -1,4 +1,4 @@
-from sonolus.script.sprite import skin, StandardSprite
+from sonolus.script.sprite import StandardSprite, skin
 
 
 @skin

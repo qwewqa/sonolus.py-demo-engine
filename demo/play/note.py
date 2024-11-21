@@ -1,23 +1,23 @@
 from sonolus.script.archetype import (
     PlayArchetype,
     StandardImport,
-    entity_memory,
     callback,
+    entity_memory,
     imported,
 )
 from sonolus.script.bucket import Judgment
 from sonolus.script.graphics import Rect
 from sonolus.script.interval import Interval
-from sonolus.script.runtime import time, touches, scaled_time, input_offset
-from sonolus.script.timing import beat_to_time, time_to_scaled_time, beat_to_bpm
+from sonolus.script.runtime import input_offset, scaled_time, time, touches
+from sonolus.script.timing import beat_to_bpm, beat_to_time, time_to_scaled_time
 from sonolus.script.vec import Vec2
 
-from demo.common.buckets import note_window, Buckets
-from demo.play.config import Config
+from demo.common.buckets import Buckets, note_window
 from demo.common.effect import Effects
-from demo.play.input_manager import touch_is_used, mark_touch_used
 from demo.common.particle import Particles
 from demo.common.skin import Skin
+from demo.play.config import Config
+from demo.play.input_manager import mark_touch_used, touch_is_used
 
 
 class Note(PlayArchetype):

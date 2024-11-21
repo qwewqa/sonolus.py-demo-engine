@@ -5,7 +5,7 @@ from sonolus.script.vec import Vec2
 
 from demo.common.options import Options
 from demo.common.skin import Skin
-from demo.preview.chart import Chart, pos_at_time, HEIGHT_SCALE
+from demo.preview.chart import HEIGHT_SCALE, Chart, pos_at_time
 
 
 class Note(PreviewArchetype):

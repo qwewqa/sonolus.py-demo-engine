@@ -4,7 +4,7 @@ from demo.common.effect import Effects
 from demo.common.particle import Particles
 from demo.common.skin import Skin
 from demo.tutorial.init import preprocess
-from demo.tutorial.instructions import Instructions, InstructionIcons
+from demo.tutorial.instructions import InstructionIcons, Instructions
 from demo.tutorial.navigate import navigate
 from demo.tutorial.update import update
 

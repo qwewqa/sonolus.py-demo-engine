@@ -1,18 +1,19 @@
+from math import floor
+
 from sonolus.script.archetype import PreviewArchetype, callback
 from sonolus.script.graphics import Rect
-from sonolus.script.math import floor
-from sonolus.script.print import PrintFormat, PrintColor
-from sonolus.script.runtime import canvas, ScrollDirection, screen
+from sonolus.script.print import PrintColor, PrintFormat
+from sonolus.script.runtime import ScrollDirection, canvas, screen
 from sonolus.script.timing import beat_to_time
 from sonolus.script.vec import Vec2
 
 from demo.common.skin import Skin
 from demo.preview.chart import (
-    Chart,
-    PANEL_WIDTH,
-    panel_count,
     PANEL_HEIGHT,
+    PANEL_WIDTH,
+    Chart,
     draw_line,
+    panel_count,
     print_at_time,
 )
 

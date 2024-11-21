@@ -3,9 +3,9 @@ from sonolus.script.graphics import Rect
 from sonolus.script.runtime import touches
 
 from demo.common.effect import Effects
+from demo.common.skin import Skin
 from demo.play.config import Config
 from demo.play.init import Init
-from demo.common.skin import Skin
 from demo.play.input_manager import touch_is_used
 
 

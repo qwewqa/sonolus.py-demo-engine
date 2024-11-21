@@ -1,13 +1,17 @@
-from sonolus.script.archetype import archetype_life_of, WatchArchetype
+from sonolus.script.archetype import WatchArchetype, archetype_life_of
 from sonolus.script.runtime import (
-    level_score,
-    level_life,
     HorizontalAlign,
+    level_life,
+    level_score,
     screen,
     set_particle_transform,
-    watch_ui as ui,
-    watch_ui_configs as ui_configs,
     set_skin_transform,
+)
+from sonolus.script.runtime import (
+    watch_ui as ui,
+)
+from sonolus.script.runtime import (
+    watch_ui_configs as ui_configs,
 )
 from sonolus.script.transform import Transform2d
 from sonolus.script.vec import Vec2

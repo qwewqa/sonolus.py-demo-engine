@@ -1,4 +1,4 @@
-from sonolus.script.bucket import buckets, bucket, bucket_sprite, JudgmentWindow, Bucket
+from sonolus.script.bucket import Bucket, JudgmentWindow, bucket, bucket_sprite, buckets
 from sonolus.script.interval import Interval
 from sonolus.script.text import StandardText
 

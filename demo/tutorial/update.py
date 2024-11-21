@@ -1,5 +1,5 @@
-from demo.tutorial.navigate import State, current_segment, Segment, is_new_state
-from demo.tutorial.note import note_intro, note_fall, note_frozen, note_hit
+from demo.tutorial.navigate import Segment, State, current_segment, is_new_state
+from demo.tutorial.note import note_fall, note_frozen, note_hit, note_intro
 from demo.tutorial.stage import draw_stage
 
 

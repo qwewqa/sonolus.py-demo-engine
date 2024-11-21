@@ -1,4 +1,4 @@
-from sonolus.script.effect import effects, StandardEffect
+from sonolus.script.effect import StandardEffect, effects
 
 
 @effects

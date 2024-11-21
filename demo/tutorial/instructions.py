@@ -1,8 +1,8 @@
 from sonolus.script.instruction import (
-    instructions,
     StandardInstruction,
-    instruction_icons,
     StandardInstructionIcon,
+    instruction_icons,
+    instructions,
 )
 
 

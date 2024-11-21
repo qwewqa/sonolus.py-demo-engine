@@ -1,10 +1,10 @@
-from sonolus.script.runtime import (
-    tutorial_ui_configs as ui_configs,
-)
 from math import pi
 
 from sonolus.script.graphics import Rect
 from sonolus.script.interval import remap_clamped
+from sonolus.script.runtime import (
+    tutorial_ui_configs as ui_configs,
+)
 from sonolus.script.vec import Vec2
 
 from demo.common.effect import Effects
@@ -12,7 +12,7 @@ from demo.common.particle import Particles
 from demo.common.skin import Skin
 from demo.tutorial.config import Config
 from demo.tutorial.instructions import InstructionIcons, Instructions
-from demo.tutorial.navigate import segment_time, advance_state, is_new_state
+from demo.tutorial.navigate import advance_state, is_new_state, segment_time
 
 
 def draw_note(y: float):

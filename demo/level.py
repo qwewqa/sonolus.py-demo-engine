@@ -1,12 +1,10 @@
 from math import sin
 
-from sonolus.script.level import LevelData, BpmChange, Level
+from sonolus.script.level import BpmChange, Level, LevelData, TimescaleChange
 
 from demo.play.init import Init
 from demo.play.note import Note
 from demo.play.stage import Stage
-from demo.preview.bar_line import TimescaleChange
-
 
 demo_level = Level(
     name="demo",

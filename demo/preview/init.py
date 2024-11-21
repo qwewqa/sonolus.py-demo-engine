@@ -1,14 +1,18 @@
 from sonolus.script.archetype import PreviewArchetype
 from sonolus.script.runtime import (
-    screen,
     preview_ui as ui,
+)
+from sonolus.script.runtime import (
     preview_ui_configs as ui_configs,
+)
+from sonolus.script.runtime import (
+    screen,
     set_skin_transform,
 )
 from sonolus.script.transform import Transform2d
 from sonolus.script.vec import Vec2
 
-from demo.preview.chart import PANEL_WIDTH, PANEL_HEIGHT
+from demo.preview.chart import PANEL_HEIGHT, PANEL_WIDTH
 
 
 class Init(PreviewArchetype):

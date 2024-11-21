@@ -1,9 +1,13 @@
 from sonolus.script.runtime import (
     screen,
-    tutorial_ui as ui,
-    tutorial_ui_configs as ui_configs,
-    set_skin_transform,
     set_particle_transform,
+    set_skin_transform,
+)
+from sonolus.script.runtime import (
+    tutorial_ui as ui,
+)
+from sonolus.script.runtime import (
+    tutorial_ui_configs as ui_configs,
 )
 from sonolus.script.transform import Transform2d
 from sonolus.script.vec import Vec2
