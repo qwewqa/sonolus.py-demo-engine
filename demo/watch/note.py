@@ -5,8 +5,8 @@ from sonolus.script.archetype import (
     imported,
 )
 from sonolus.script.bucket import Judgment
-from sonolus.script.graphics import Rect
 from sonolus.script.interval import Interval
+from sonolus.script.quad import Rect
 from sonolus.script.runtime import is_replay, is_skip, scaled_time
 from sonolus.script.timing import beat_to_bpm, beat_to_time, time_to_scaled_time
 from sonolus.script.vec import Vec2

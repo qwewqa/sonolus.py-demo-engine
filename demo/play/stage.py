@@ -1,5 +1,5 @@
 from sonolus.script.archetype import PlayArchetype, callback
-from sonolus.script.graphics import Rect
+from sonolus.script.quad import Rect
 from sonolus.script.runtime import touches
 
 from demo.common.effect import Effects
@@ -34,4 +34,4 @@ class Stage(PlayArchetype):
             t=1 - Config.note_radius / 4,
             b=1 + Config.note_radius / 4,
         )
-        Skin.judge_line.draw(layout, z=0, a=1 if touches().size() > 0 else 0.5)
+        Skin.judge_line.draw(layout, z=0, a=1 if len(touches()) > 0 else 0.5)

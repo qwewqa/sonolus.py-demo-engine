@@ -1,7 +1,7 @@
 from math import pi
 
-from sonolus.script.graphics import Rect
 from sonolus.script.interval import remap_clamped
+from sonolus.script.quad import Rect
 from sonolus.script.runtime import (
     tutorial_ui_configs as ui_configs,
 )

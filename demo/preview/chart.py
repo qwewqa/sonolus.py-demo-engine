@@ -2,9 +2,9 @@ from math import ceil
 from typing import Literal
 
 from sonolus.script.globals import level_data
-from sonolus.script.graphics import Rect
 from sonolus.script.interval import Interval
 from sonolus.script.print import PrintColor, PrintFormat, print_number
+from sonolus.script.quad import Rect
 from sonolus.script.runtime import HorizontalAlign, screen, skin_transform
 from sonolus.script.sprite import Sprite
 from sonolus.script.timing import beat_to_time

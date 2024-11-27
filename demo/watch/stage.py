@@ -1,5 +1,5 @@
 from sonolus.script.archetype import WatchArchetype
-from sonolus.script.graphics import Rect
+from sonolus.script.quad import Rect
 
 from demo.common.skin import Skin
 from demo.watch.config import Config

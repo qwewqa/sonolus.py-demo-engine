@@ -1,5 +1,5 @@
 from sonolus.script.archetype import PreviewArchetype, StandardImport, imported
-from sonolus.script.graphics import Rect
+from sonolus.script.quad import Rect
 from sonolus.script.timing import beat_to_time
 from sonolus.script.vec import Vec2
 
